@@ -1,5 +1,6 @@
 # Machine Learning Road
 Machine Learning Resources, Practice and Research.
+### Note: All credit for finding the resources rests with the original author @yanshengjia <br>I'm just preserving his resources documentation and adding my own projects to the folder.
 
 ***
 
