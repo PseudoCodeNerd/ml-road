@@ -43,4 +43,7 @@ __I approached this as a recommender problem and used matrix factorization.__
 
 My understanding of matrix factorization is that the algo treats the problem as a matrix of the target variable, with user ids and product ids as the two dimensions. It then fills in the blanks in this matrix using factorization. Additionally, it also incorporates features of the users or products such as gender, product category etc. These are called ‘side features’ in recommender jargon.
 
-My final submission is a simple average of the predictions of three such (kinda similar) models, each with slightly different features of data.
+## Result
+### Got Final RMSE: 1925.8
+### Score : 2808.78
+ 
