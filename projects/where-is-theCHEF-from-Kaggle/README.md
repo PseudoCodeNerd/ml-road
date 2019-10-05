@@ -1,6 +1,6 @@
 # Where is the Chef From ? - Kaggle Challenge
 ### https://www.kaggle.com/c/whats-cooking-kernels-only/overview
-In this project I aim to predict the category of a dish's cuisine given a list of its ingredients.  <br>
+In this project I aim to predict the category of a dish's cuisine given a list of its ingredients. Because why not? (P.S: This was the most creative dataset I had ever found and it was related to food 🙃 ) <br>
 Complete documented code is in <code>chef.ipynb</code>. 
 ### From the official desc:- 
 ‘’If you're in Northern California, you'll be walking past the inevitable bushels of leafy greens, spiked with dark purple kale and the bright pinks and yellows of chard. Across the world in South Korea, mounds of bright red kimchi greet you, while the smell of the sea draws your attention to squids squirming nearby. India’s market is perhaps the most colorful, awash in the rich hues and aromas of dozens of spices: turmeric, star anise, poppy seeds, and garam masala as far as the eye can see. Some of our strongest geographic and cultural associations are tied to a region's local foods.’’
@@ -8,12 +8,12 @@ Complete documented code is in <code>chef.ipynb</code>.
 The public dataset is from the Kaggle competition, What’s for Dinner?The data is provided in JSON format. Each example in the dataset contains the recipe identification, type of cuisine and a list of ingredients. There are an average of 11 ingredients per recipe. The data consists of 39,774 unique recipes from 20 countries with 428,275 ingredients (6,714 unique).
 
 ### Feature Engineering
-Figure 1
-![Figure 1](1.png)
-Figure 2
-![Figure 2](ingredients.png)
-Figure 3
-![Figure 3](paneerusage.png)
+
+<p float="left">
+  <img src="1.png" width="100" />
+  <img src="ingredients.png" width="100" /> 
+  <img src="paneerusage.png" width="100" />
+</p>
 Several feature engineering challenges emerge from the fact that some of the ingredients are commonly used across multiple cuisines (for example, salt, oil and water). Figure 2 shows the top 15 ingredients found in the dataset across all cuisines. Figure 1 shows the distribution of recipes across various cuisines. The distribution is uneven; some countries are represented in higher volume compared to others.<br>
 Figure 3 demonstrates the use of a particular ingredient (paneer) across various cuisines. This example shows a strong connection between a small set of countries and an ingredient.
 A high level analysis of the data reveals the necessity of data cleansing. The following list includes some examples of data clean up that we will address in
@@ -64,7 +64,8 @@ TF-IDF vectorizer was now used to extract a bag of words from the recipe data by
 | `Simple Neural Network` | **79.43%** |
 
 ### Confusion Matrix
-![CM Of SVM (best)](cmbest.png) ![CM of Random Forests (worst)](cmworst.png) 
+| [![CM Of SVM (best)](cmbest.png) ]()  | [![CM of Random Forests (worst)](cmworst.png)]() |
+|:---:|:---:|:---:|
 I evaluated the classification accuracy by computing the confusion matrix. Each row corresponds to the true cuisine label.The results were normalized by dividing by the number of recipes for each cuisine in
 the test data. The diagonal elements represent the proportion of samples for each cuisine whose predicted label was equal to the true label, while off-diagonal elements were mislabeled by the classifier. In other words, the higher the diagonal values of the confusion matrix the better since this indicates a greater number of correct predictions.
 <br>
