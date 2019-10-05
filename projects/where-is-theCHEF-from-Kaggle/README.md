@@ -64,9 +64,7 @@ TF-IDF vectorizer was now used to extract a bag of words from the recipe data by
 | `Simple Neural Network` | **79.43%** |
 
 ### Confusion Matrix
-CM Of SVM (best)             | CM of Random Forests (worst)
-| :-------------------------:|:--------------------: |
-| ![](cmbest.png)  |  ![](cmworst.png) | 
+![CM Of SVM (best)](cmbest.png) ![CM of Random Forests (worst)](cmworst.png) 
 I evaluated the classification accuracy by computing the confusion matrix. Each row corresponds to the true cuisine label.The results were normalized by dividing by the number of recipes for each cuisine in
 the test data. The diagonal elements represent the proportion of samples for each cuisine whose predicted label was equal to the true label, while off-diagonal elements were mislabeled by the classifier. In other words, the higher the diagonal values of the confusion matrix the better since this indicates a greater number of correct predictions.
 <br>
